@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { AuthService } from '../services/auth.service';
-import { UserSchema } from '../schemas/user.schema';
-import { ApiResponse } from '../utils/ApiResponse';
+import { AuthService } from '../services/auth.service.js';
+import { UserSchema } from '../schemas/user.schema.js';
+import { ApiResponse } from '../utils/ApiResponse.js';
 
 export class AuthController {
   private authService: AuthService;

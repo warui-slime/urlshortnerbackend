@@ -1,8 +1,8 @@
-import type { User } from "../schemas/user.schema"
-import { UserModel } from "../models/User.model";
+import type { User } from "../schemas/user.schema.js"
+import { UserModel } from "../models/User.model.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import dbConnect from "../lib/dbConnect";
+import dbConnect from "../lib/dbConnect.js";
 
 const JWT_SECRET = process.env.JWT_SECRET!;
 

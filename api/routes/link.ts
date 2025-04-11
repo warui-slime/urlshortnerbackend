@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { verifyToken } from '../middleware/auth';
-import { createLink } from '../controllers/link';
-import { getDashboardData } from '../controllers/analytics';
+import { verifyToken } from '../middleware/auth.js';
+import { createLink } from '../controllers/link.js';
+import { getDashboardData } from '../controllers/analytics.js';
 
 const router = Router();
 

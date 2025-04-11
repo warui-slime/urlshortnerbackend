@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { UserPayload } from '../types/express';
+import { UserPayload } from '../types/express.js';
 
 const JWT_SECRET = process.env.JWT_SECRET;
 

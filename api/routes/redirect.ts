@@ -1,5 +1,5 @@
 import { RequestHandler, Router } from 'express';
-import { redirect } from '../controllers/redirect';
+import { redirect } from '../controllers/redirect.js';
 
 const router = Router();
 

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import { UserModel } from '../models/User.model';
+import { UserModel } from '../models/User.model.js';
 
 
 const JWT_SECRET = process.env.JWT_SECRET!;

@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { Link } from '../models/Link.model';
-import { Analytics } from '../models/Analytics.model';
+import { Link } from '../models/Link.model.js';
+import { Analytics } from '../models/Analytics.model.js';
 import { detect } from 'detect-browser';
-import dbConnect from '../lib/dbConnect';
+import dbConnect from '../lib/dbConnect.js';
 
 export const redirect = async (req: Request, res: Response): Promise<void> => {
     await dbConnect();

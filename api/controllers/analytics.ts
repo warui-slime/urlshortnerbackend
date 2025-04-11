@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { Analytics } from '../models/Analytics.model';
-import { Link } from '../models/Link.model';
-import dbConnect from '../lib/dbConnect';
+import { Analytics } from '../models/Analytics.model.js';
+import { Link } from '../models/Link.model.js';
+import dbConnect from '../lib/dbConnect.js';
 
 
 export const getDashboardData = async (req: Request, res: Response): Promise<void> => {

@@ -1,12 +1,12 @@
 import express,{ Express } from "express";
 import cors from "cors"
 import cookieParser from "cookie-parser";
-import authRoutes from "./routes/auth"
-import {errorHandler} from "./middleware/errorHandler"
-import { verifyToken } from "./middleware/auth";
-import linkRoutes from "./routes/link"
-import redirectRoutes from "./routes/redirect"
-import qrRouter from "./routes/qr"
+import authRoutes from "./routes/auth.js"
+import {errorHandler} from "./middleware/errorHandler.js"
+import { verifyToken } from "./middleware/auth.js";
+import linkRoutes from "./routes/link.js"
+import redirectRoutes from "./routes/redirect.js"
+import qrRouter from "./routes/qr.js"
 
 const app:Express = express();
 

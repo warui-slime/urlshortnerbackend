@@ -1,5 +1,5 @@
-import app from './app';
-import dbConnect from './lib/dbConnect';
+import app from './app.js';
+import dbConnect from './lib/dbConnect.js';
 
 async function startServer() {
   await dbConnect();

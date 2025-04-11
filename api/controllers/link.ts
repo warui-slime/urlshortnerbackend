@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { Link } from '../models/Link.model';
+import { Link } from '../models/Link.model.js';
 import { customAlphabet } from 'nanoid';
-import { CreateLinkSchema } from '../schemas/link.schema';
+import { CreateLinkSchema } from '../schemas/link.schema.js';
 import dbConnect from '../lib/dbConnect.js';
 
 const alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
